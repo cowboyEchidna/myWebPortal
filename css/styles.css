@@ -18,12 +18,12 @@ body {
     color: #272a3f;
 }
 
-div :nth-child(odd) {
-    background-color: #684e5f;
-    color: #ebd6c7;
+.even {
+	background-color: #684e5f;
+	color: #ebd6c7;
 }
 
-div :nth-child(even) {
-    background-color: #8f5b66;
-    color: #ebd6c7;
+.odd {
+	background-color: #8f5b66;
+	color: #ebd6c7;
 }
