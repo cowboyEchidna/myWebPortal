@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Colors */
+/*
+#272a3f
+#221e2a
+#684e5f
+#8f5b66
+#ebd6c7
+*/
+
+body {
+    margin: 10px;
+    background-color: #ebd6c7;
+    color: #272a3f;
+}
+
+div :nth-child(odd) {
+    background-color: #684e5f;
+    color: #ebd6c7;
+}
+
+div :nth-child(even) {
+    background-color: #8f5b66;
+    color: #ebd6c7;
+}
