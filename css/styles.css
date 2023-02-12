@@ -1,29 +1,175 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Colors */
+/* CSS Document */
 /*
-#272a3f
-#221e2a
-#684e5f
-#8f5b66
-#ebd6c7
+Colors:
+#493657 - English Violet
+#AD2E24 - Fire Brick
+#ECFEE8 - Honeydew
+#988B8E - Taupe Gray
+#2D1E2F - Dark Purple
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;	
+}
+
 body {
-    margin: 10px;
-    background-color: #ebd6c7;
-    color: #272a3f;
+	margin-top: 2%;
+	background-image: url("../images/eyeBG.gif");
+	background-attachment:fixed;
+  	background-position: center;
 }
 
-.even {
-	background-color: #684e5f;
-	color: #ebd6c7;
+#content {
+	background-image: url(../images/portal_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 90%;
+	margin: auto;
 }
 
-.odd {
-	background-color: #8f5b66;
-	color: #ebd6c7;
+#webPRJ {
+	font-family: 'Caveat', cursive;
+	font-size: 250%;
+	text-align: center;
+	color: #ECFEE8;
 }
+
+h2 {
+	font-family: 'Caveat', cursive;
+	font-size: 250%;
+}
+
+h4 {
+	font-family: 'Caveat', cursive;
+	font-size: 200%;
+}
+
+h5 {
+	font-family: 'Caveat', cursive;
+	font-size: 150%;
+}
+
+#webProjects a:hover {
+	color: #00000075;
+}
+
+.self {
+	background-image: linear-gradient(#816E73, #816E73);
+	background-size: 75% 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 10%;
+}
+
+#whomst {
+	margin-left: 50%;
+	font-size: 3em;
+	font-family: 'Caveat', cursive;
+	color: #ECFEE8;
+}
+
+#whomst2 {
+	font-size: 1.75em;
+	font-family: 'Caveat', cursive;
+	color: #ECFEE8;
+	float: right;
+	margin-left: 40%;
+	margin-right: 10%;
+	text-align: center;
+	margin-top: -10%;
+}
+
+#header {
+	padding-bottom: 50%;
+	padding-top: 10%;
+	color: aliceblue;
+	margin-left: 1%;
+}
+
+nav {
+	text-align: center;
+	margin-top: 5%;
+	background-color: #8A777B;
+}
+
+ul li {
+	display: inline;
+}
+
+li a {
+	color: beige;
+	font-family: 'Chakra Petch', sans-serif;
+	text-decoration: none;
+	font-size: 2em;
+	margin-right: 3%;
+}
+
+#who_is {
+	margin-top: 10%;
+	background-color: #2D1E2F75;
+	padding: 20;
+}
+
+#contact {
+	margin-top: 2%;
+	background-color: #2D1E2F75;
+	padding: 20;
+	margin-bottom: 20%
+}
+
+#contact h3 {
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Caveat', cursive;
+	color: #ECFEE8;
+}
+
+#contact p {
+	text-align: center;
+	font-size: 2em;
+	font-family: 'Caveat', cursive;
+	color: #ECFEE8;
+}
+
+#contact a {
+	text-decoration: none;
+	color: #000;
+	text-shadow: 1px -1px 9px #ECFEE8;
+}
+
+#contact a:hover {
+	text-decoration: underline;
+	color: #ECFEE8;
+}
+
+#btt {
+	text-align: center;
+	background-color: #2D1E2F75;
+	margin-bottom: 2%;
+	padding: 1%;
+}
+
+#btt a {
+	font-size: 2em;
+	text-decoration: none;
+	color: #ECFEE8;
+}
+
+#btt a:hover {
+	color: brown;
+}
+
+#who_is a{
+	color: #ECFEE8;
+	text-decoration: none;
+}
+
+#who_is a:hover {
+	text-decoration: underline;
+	color: #ECFEE8;
+}
+
