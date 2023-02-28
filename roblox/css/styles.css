@@ -1,0 +1,82 @@
+/* CSS Document */
+
+/*Colors
+#313131
+#383d43
+#383d43
+#e43134
+#CBCBCB
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #313131;
+	color: #CBCBCB;
+	text-align: center;
+}
+
+h2 {
+	float: left;
+	margin-left: 10%;
+	margin-right: 3%;
+	font-size: 2em;
+}
+
+main {
+	margin-bottom: 5%;
+}
+
+main p {
+	text-align: left;
+	margin-left: 10%;
+	font-size: 1.5em;
+	margin-right: 10%;
+}
+
+#news {
+	margin-bottom: 6%;
+}
+
+.image {
+	margin: 2%;
+}
+
+table {
+	justify-content: center;
+	font-size: 1.5em;
+	display: block;
+	margin-bottom: 0 auto;
+}
+
+nav {
+	padding: 2%;
+	background-color: #e4313450;
+}
+
+nav li {
+	display: inline;
+	padding: 1%;
+	font-size: 1.25em;
+	list-style-type: none;
+}
+
+nav li a {
+	color: #e43134;
+	text-decoration: none;
+}
+
+nav a:active {
+	
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav a:visited {
+	color: antiquewhite;
+}
