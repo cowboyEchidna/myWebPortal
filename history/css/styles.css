@@ -1,0 +1,70 @@
+
+/*Colors*/
+/*353535, 3c6e71, ffffff, d9d9d9, 284b63*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 2%;
+	padding: 2%;
+	text-align: center;
+	background-color: #d9d9d9;
+	color: #353535;
+}
+
+.content {
+	margin: 1em;
+	background-color: #3c6e7175;
+	padding: 1em;
+}
+
+.imgs {
+	margin: 0 auto;
+	max-height: 50%;
+	max-width: 50%;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+nav {
+	background-color: #284b6375;
+	padding: 1em;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 2em;
+	padding: 1em;
+}
+
+nav li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav ul {
+	color: aqua;
+}
+
+nav a:active {
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+nav a:visited {
+	color: #000;
+}
+
+table {
+	margin: 0 auto;
+	position: relative;
+}
