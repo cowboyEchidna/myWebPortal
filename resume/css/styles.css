@@ -4,118 +4,332 @@
 Colors:
 #222222
 #1E2D2F
+#
 #949494
 #B0B0B0
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 }
 
-#content {
-	margin: 2% 5%;
-	background-color: dimgray;
-	padding-bottom: 5%;
-	border: solid 3.5px #B0B0B0;
+/*-------------------------------------------------------------*/
+
+#contentTablet {
+	display: none;
 }
+
+#contentMobile { 
+	display: none;
+}
+
+#contentDesktop {
+	margin: 3%;
+	padding: 2%;
+	background-image: linear-gradient(180deg, #b40000 0%, #790909 35%, #3d0000 100%);
+}
+
+/*------------------------------------------------------------- End of Displays */ 
 
 body {
-	background-image: url("../images/bg.jpeg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+	background-color: black;
+	font-family: 'Oxygen', sans-serif;
 }
 
-#header {
-	background-image: url("../images/heroIMG.png");
-	text-align: center;
-	padding: 20px;
-	margin-bottom: 20%;
-	font-size: 3em;
+.dropContent, .dropContent2, .dropContent3 {
+	display: none;
 }
 
-
-#contact {
-	margin-left: 5%;
-	padding: 10%;
-	display: inline-block;
-	border: solid 3px #222222;
-	background-color: #949494;
-}
-
-#contact a {
-	color: #FFF;
-}
-
-#contact a:hover {
-	color: #1E2D2F;
-}
-
-#edu1 {
-	margin-bottom: 4%;
-	margin-top: -25%;
-}
-
-#edu1, #edu2 {
-	margin-right: 5%;
-	margin-left: 55%;
-	border: solid 3px #000;
-	padding: 2%;
-	background-color: #949494;
-}
-
-#skills1 {
-	margin-top: 5%;
-	margin-left: 5%;
-	display: inline-block;
-	padding: 2%;
-	padding-right: 35%;
-	border: solid 3px #000;
-	background-color: #949494;
-}
-
-#skills2 {
-	margin-bottom: 10%;
-	padding: 2%;
-	border: solid 3px #000;
-	margin-left: 5%;
-	display: inline-block;
-	border-top-width: 0px;
-	padding-right: 32%;
-	background-color: #949494;
-}
-
-#experience {
-	float: right;
-	margin-right: 6.5%;
-	text-align: center;
-	padding: 2%;
-	border: solid 3px #000;
-	margin-top: -3%;
-	background-color: #949494;
-}
-
-#extra {
-	float: none;
+.dropdown:hover .dropContent, .dropdown2:hover .dropContent2, .dropdown3:hover .dropContent3 {
 	display: block;
-	padding: 5%;
+}
+
+/*-------------------------------------------------------------*/
+
+table {
+	margin: 0 auto;
+	position: relative;
+}
+
+td {
+	text-align: center;
+}
+
+#headerDesktop {
+	display: block;
+	padding: 3%;
+	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 3em;
+	color: #1D0E0E;
+}
+
+#contactDesktop {
+	position: relative;
+	display: block;
+	padding: 3%;
 	font-size: 1.5em;
 	text-align: center;
-	border: solid 3px #000;
 	margin-left: 5%;
 	margin-right: 5%;
-	background-color: #949494;
+	background-color: #00000050;
+	margin-bottom: 3%;
+	color: #A0A0A0;
 }
 
-#extra li {
+#contactDesktop a {
+	text-decoration: none;
+	color: #260000;
+}
+
+#contactDesktop a:hover {
+	color: #A0A0A0;
+}
+
+#edu1Desktop, #edu2Desktop {
+	position: relative;
+	display: block;
+	padding: 3%;
+	font-size: 1.5em;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #00000050;
+	color: #A0A0A0;
+	margin-bottom: 2%
+}
+
+#skillsDesktop LI {
+	margin-bottom: 6%;
 	list-style-type: none;
-	
-	white-space: """""""""""""""""""""""""""""""""""""""
+	padding-bottom: 6%;
 }
 
+td #skillsDesktop, td #experienceDesktop {
+	position: relative;
+	display: block;
+	padding: 3%;
+	font-size: 1.5em;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #00000050;
+	color: #A0A0A0;
+}
 
+#extraDesktop {
+	position: relative;
+	display: block;
+	padding: 3%;
+	font-size: 1.5em;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #00000050;
+	margin-top: 3%;
+	color: #A0A0A0;
+}
 
+#extraDesktop li {
+	list-style-type: none;
+}
+
+/*------------------------------------------------------------- End of Desktop */
+
+@media screen and (min-width: 481px) and (max-width: 1144px) {
+	#contentDesktop {
+		display: none;
+	}
+	
+	#contentTablet {
+		display: block;
+		margin: 3%;
+		padding: 2%;
+    	background-image: linear-gradient(180deg, #b40000 0%, #790909 35%, #3d0000 100%);
+	}
+	
+	#contentMobile {
+		display: none;
+	}
+	
+	#headerTablet {
+		display: block;
+		padding: 3%;
+		margin: 0 auto;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
+		font-size: 3em;
+		color: #1D0E0E;
+	}
+
+	#contactTablet {
+		position: relative;
+		display: block;
+		padding: 3%;
+		font-size: 1.5em;
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: #00000050;
+		margin-bottom: 3%;
+		color: #A0A0A0;
+	}
+
+	#contactTablet a {
+		text-decoration: none;
+		color: #000;
+		font-weight: 800;
+	}
+
+	#contactTablet a:hover {
+		color: #A0A0A0;
+	}
+
+	#edu1Tablet, #edu2Tablet {
+		position: relative;
+		display: block;
+		padding: 3%;
+		font-size: 1.5em;
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: #00000050;
+		color: #A0A0A0;
+	}
+	
+	#skillsTablet li {
+		list-style-type: none;
+	}
+
+	#skillsTablet, #experienceTablet {
+		position: relative;
+		display: block;
+		padding: 3%;
+		font-size: 1.5em;
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: #00000050;
+		color: #A0A0A0;
+	}
+
+	#extraTablet {
+		position: relative;
+		display: block;
+		padding: 3%;
+		font-size: 1.5em;
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: #00000050;
+		margin-top: 3%;
+		color: #A0A0A0;
+	}
+
+	#extraTablet ul {
+		list-style-type: none;
+	}
+}
+
+/*------------------------------------------------------------- End of Tablet */
+
+@media screen and (max-width: 480px) {
+	#contentDesktop {
+		display: none;
+	}
+	
+	#contentTablet {
+		display: none;
+	}
+	
+	#contentMobile {
+		display: block;
+		margin: 3%;
+		padding: 2%;
+		background-image: linear-gradient(180deg, #b40000 0%, #790909 35%, #3d0000 100%);
+		padding-bottom: 13%;
+	}
+	#headerMobile {
+		display: block;
+		padding: 3%;
+		margin: 0 auto;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
+		font-size: 3em;
+		color: #1D0E0E;
+	}
+
+	#contactMobile {
+		position: relative;
+		display: block;
+		padding: 3%;
+		font-size: 1.5em;
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: #00000050;
+		margin-bottom: 3%;
+		color: #A0A0A0;
+	}
+
+	#contactMobile a {
+		text-decoration: none;
+		color: #000;
+		font-weight: 800;
+	}
+
+	#contactMobile a:hover {
+		color: #A0A0A0;
+	}
+
+	#eduMobile {
+		position: relative;
+		display: block;
+		padding: 3%;
+		font-size: 1.5em;
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: #00000050;
+		color: #A0A0A0;
+	}
+	
+	#skillsMobile li {
+		list-style-type: none;
+	}
+
+	#skillsMobile, #experienceMobile {
+		position: relative;
+		display: block;
+		padding: 3%;
+		font-size: 1.5em;
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: #00000050;
+		color: #A0A0A0;
+	}
+
+	#extraMobile {
+		position: relative;
+		display: block;
+		padding: 3%;
+		font-size: 1.5em;
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: #00000050;
+		margin-top: 3%;
+		color: #A0A0A0;
+	}
+
+	#extraMobile ul {
+		list-style-type: none;
+	}
+}
 
