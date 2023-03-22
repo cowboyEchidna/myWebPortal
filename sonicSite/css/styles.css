@@ -1,0 +1,100 @@
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("../images/bg.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: gold;
+}
+
+h2 {
+	margin: 2%;
+}
+
+.d {
+	background-image: url("../images/bg1.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.d #big {
+	position: relative;
+	margin: 0 20%;
+	padding: 2%;
+}
+
+.d img {
+	position: relative;
+	margin: 2% 40%;
+	padding: 2%;
+}
+
+
+nav {
+	display: block;
+	text-align: center;
+	margin: 2%;
+	font-size: 1.5em;
+	padding: 2%;
+	background-color: #080D1E85;
+}
+
+nav li {
+	display: inline-block;
+	position: relative;
+	padding: 2%;
+}
+
+nav li a {
+	color: #82B8CE;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: #D0A224;
+}
+
+main {
+	text-align: center;
+	color: #C3BCBC;
+	background-color: #080D1E99;
+	padding: 2%;
+	font-size: 1.25em;
+}
+
+main h4 {
+	background-color: #080D1EBB;
+	padding: 1% 3%;
+}
+
+main p {
+	background-color: #080D1E99;
+	padding: 3%;
+}
+
+table img {
+	margin: 0 50%;
+	position: relative;
+}
+
+footer {
+	margin-top: 5%;
+	text-align: center;
+	background-color: #080D1E85;
+	padding: 2%;
+}
+
+form {
+	text-align: center;
+}
+
+#resetNsubmit {
+	margin: 0 auto;
+	position: relative;
+}
